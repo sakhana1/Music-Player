@@ -1,0 +1,194 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #ffe9f3, #fff),
+              linear-gradient(135deg, #fff7ff, #ffe4f1);
+  color: #331b3f;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Top nav */
+
+.top-nav {
+  width: 100%;
+  padding: 16px 6vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  backdrop-filter: blur(18px);
+  background: rgba(255, 248, 253, 0.85);
+  border-bottom: 1px solid rgba(255, 190, 220, 0.4);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+}
+
+.logo-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ffb6c9, #ffdca8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.nav-links {
+  display: flex;
+  gap: 12px;
+  font-size: 14px;
+}
+
+.nav-links a {
+  padding: 6px 10px;
+  border-radius: 999px;
+  transition: 0.25s ease;
+  color: #7a5067;
+}
+
+.nav-links a:hover {
+  background: rgba(255, 223, 240, 0.9);
+}
+
+.nav-links .active {
+  background: linear-gradient(135deg, #ffbbcc, #ffd89c);
+  color: #53254f;
+  box-shadow: 0 6px 16px rgba(255, 153, 180, 0.45);
+}
+
+/* Page */
+
+.page {
+  padding: 28px 6vw 40px;
+  text-align: center;
+}
+
+.page h1 {
+  font-size: 30px;
+  margin-bottom: 6px;
+}
+
+.sub {
+  font-size: 13px;
+  color: #8a5677;
+  margin-bottom: 24px;
+}
+
+/* Plans */
+
+.plans {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 18px;
+}
+
+.plan {
+  border-radius: 20px;
+  padding: 18px 16px 20px;
+  background: rgba(255, 252, 254, 0.98);
+  border: 1px solid rgba(255, 200, 229, 0.9);
+  box-shadow: 0 16px 34px rgba(147, 89, 127, 0.28);
+  text-align: left;
+  position: relative;
+}
+
+.plan h2 {
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+.plan p {
+  font-size: 13px;
+  color: #8a5677;
+  margin-bottom: 10px;
+}
+
+.plan ul {
+  list-style: none;
+  margin-bottom: 14px;
+}
+
+.plan li {
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+.plan li::before {
+  content: "• ";
+  color: #ff8fb1;
+}
+
+/* Featured */
+
+.featured {
+  background: linear-gradient(145deg, #fff8fe, #ffe3f4);
+  border: 1px solid rgba(255, 180, 222, 0.95);
+}
+
+.badge {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #ffd89c, #ffb6c9);
+  font-size: 10px;
+  color: #4b213f;
+}
+
+/* Buttons */
+
+.btn-primary,
+.btn-outline {
+  border-radius: 999px;
+  padding: 8px 14px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  border: none;
+  background: linear-gradient(135deg, #ffb6c9, #ffd89c);
+  color: #442045;
+  font-weight: 600;
+  box-shadow: 0 10px 22px rgba(255, 153, 180, 0.55);
+}
+
+.btn-outline {
+  border: 1px solid rgba(255, 192, 222, 0.9);
+  background: rgba(255, 252, 254, 0.96);
+  color: #7a5067;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .top-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .nav-links {
+    flex-wrap: wrap;
+  }
+}

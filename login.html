@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CastleTunes - Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="login.css" />
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+    
+  <header class="top-nav">
+    <div class="logo">
+      <span class="logo-icon"><i class="fa-solid fa-tower-cell"></i></span>
+      <span class="logo-text">CastleTunes</span>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html">Welcome</a>
+      <a href="home.html">Home</a>
+      <a href="playlist.html">Playlist</a>
+      <a href="search.html">Search</a>
+      <a href="premium.html">Premium</a>
+      <a href="about.html">About</a>
+      <a href="login.html" class="active">Login</a>
+    </nav>
+  </header>
+
+  <main class="login-wrapper">
+    <div class="login-card">
+      <h2>Log in to your castle</h2>
+      <p>Continue listening to your soft gold playlists.</p>
+
+      <form id="loginForm">
+        <div class="field">
+          <label>Email</label>
+          <div class="field-input">
+            <i class="fa-solid fa-envelope"></i>
+            <input type="email" required placeholder="you@example.com" />
+          </div>
+        </div>
+
+        <div class="field">
+          <label>Password</label>
+          <div class="field-input">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" required placeholder="••••••••" />
+          </div>
+        </div>
+
+        <button type="submit" class="btn-primary">Log in</button>
+        <p class="hint">No real account needed – this is a front-end demo only.</p>
+      </form>
+    </div>
+  </main>
+
+  <script src="login.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CastleTunes - Search</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="search.css" />
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+    
+  <header class="top-nav">
+    <div class="logo">
+      <span class="logo-icon"><i class="fa-solid fa-tower-cell"></i></span>
+      <span class="logo-text">CastleTunes</span>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html">Welcome</a>
+      <a href="home.html">Home</a>
+      <a href="playlist.html">Playlist</a>
+      <a href="search.html" class="active">Search</a>
+      <a href="premium.html">Premium</a>
+      <a href="about.html">About</a>
+      <a href="profile.html">Profile</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <section class="search-bar-row">
+      <h1>Search</h1>
+      <div class="search-bar">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input id="searchInput" type="text" placeholder="Search for songs, artists, playlists..." />
+      </div>
+    </section>
+
+    <section class="results">
+      <h2>Browse all</h2>
+      <div id="searchGrid" class="grid">
+        <div class="tile" data-name="lofi chill study">
+          <h3>Lo-fi Study</h3>
+          <p>Soft beats for focus.</p>
+        </div>
+        <div class="tile" data-name="romantic love">
+          <h3>Romantic Gold</h3>
+          <p>Slow warm ballads.</p>
+        </div>
+        <div class="tile" data-name="sleep night calm">
+          <h3>Night Calm</h3>
+          <p>Light piano at midnight.</p>
+        </div>
+        <div class="tile" data-name="party happy dance">
+          <h3>Castle Party</h3>
+          <p>Up-beat candy pop.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="search.js"></script>
+</body>
+</html>

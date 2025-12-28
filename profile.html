@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CastleTunes - Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="profile.css" />
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="top-nav">
+    <div class="logo">
+      <!-- use image logo if you added it -->
+      <!-- <img src="logo-castletunes.png" alt="CastleTunes logo" class="logo-img" /> -->
+      <span class="logo-icon"><i class="fa-solid fa-tower-cell"></i></span>
+      <span class="logo-text">CastleTunes</span>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html">Welcome</a>
+      <a href="home.html">Home</a>
+      <a href="playlist.html">Playlist</a>
+      <a href="search.html">Search</a>
+      <a href="premium.html">Premium</a>
+      <a href="about.html">About</a>
+      <a href="profile.html" class="active">Profile</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <section class="profile-layout">
+
+      <!-- LEFT: main profile card -->
+      <div class="profile-main">
+        <div class="profile-header">
+          <div class="avatar">
+            <span>U</span>
+          </div>
+          <div class="profile-text">
+            <h1>Your Castle</h1>
+            <p class="user-tag">@castle-listener</p>
+            <div class="tags">
+              <span><i class="fa-solid fa-moon"></i> Night listener</span>
+              <span><i class="fa-solid fa-headphones"></i> Chill mix lover</span>
+            </div>
+          </div>
+          <button id="editNameBtn" class="icon-btn" title="Edit name">
+            <i class="fa-solid fa-pen"></i>
+          </button>
+        </div>
+
+        <div class="stats-row">
+          <div>
+            <span id="statPlaylists">12</span>
+            <p>Playlists</p>
+          </div>
+          <div>
+            <span id="statLiked">128</span>
+            <p>Liked songs</p>
+          </div>
+          <div>
+            <span id="statMinutes">2.4k</span>
+            <p>Minutes this month</p>
+          </div>
+          <div>
+            <span id="statFollowers">6</span>
+            <p>Followers</p>
+          </div>
+        </div>
+
+        <div class="mood-row">
+          <p class="mood-label">Listening mood</p>
+          <div class="mood-chips">
+            <button class="mood-chip active" data-mood="Chill">Chill</button>
+            <button class="mood-chip" data-mood="Focus">Focus</button>
+            <button class="mood-chip" data-mood="Happy">Happy</button>
+            <button class="mood-chip" data-mood="Sleep">Sleep</button>
+          </div>
+          <p class="mood-text" id="moodText">CastleTunes will suggest soft lo-fi and warm beats.</p>
+        </div>
+
+        <button id="goPremiumBtn" class="btn-primary-wide">
+          <i class="fa-solid fa-crown"></i> Try Castle Premium for 7 days
+        </button>
+      </div>
+
+      <!-- RIGHT: recent activity + favorite playlists -->
+      <div class="profile-side">
+        <div class="card activity-card">
+          <div class="card-header">
+            <h2>Recent activity</h2>
+            <span class="pill">Last 24 hours</span>
+          </div>
+          <ul class="activity-list">
+            <li>
+              <div>
+                <p>Played <strong>Castle Sunrise</strong></p>
+                <span>Playlist • 12 tracks</span>
+              </div>
+              <span class="time">15 min ago</span>
+            </li>
+            <li>
+              <div>
+                <p>Liked <strong>Golden Hallway</strong></p>
+                <span>Song • Soft Keys</span>
+              </div>
+              <span class="time">1 hr ago</span>
+            </li>
+            <li>
+              <div>
+                <p>Started following <strong>@night-lofi</strong></p>
+                <span>Profile</span>
+              </div>
+              <span class="time">3 hrs ago</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="card fav-card">
+          <div class="card-header">
+            <h2>Favorite playlists</h2>
+            <a href="playlist.html" class="see-all">See all</a>
+          </div>
+          <div class="fav-list">
+            <a href="playlist.html" class="fav-item">
+              <div class="fav-cover"></div>
+              <div>
+                <p>Castle Sunrise</p>
+                <span>Soft electronic • 32 min</span>
+              </div>
+            </a>
+            <a href="playlist.html" class="fav-item">
+              <div class="fav-cover alt"></div>
+              <div>
+                <p>Pink Clouds</p>
+                <span>Chill pop • 24 min</span>
+              </div>
+            </a>
+            <a href="playlist.html" class="fav-item">
+              <div class="fav-cover alt2"></div>
+              <div>
+                <p>Night Library</p>
+                <span>Study beats • 40 min</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <script src="profile.js"></script>
+</body>
+</html>

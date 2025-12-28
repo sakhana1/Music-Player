@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CastleTunes - Playlist</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="playlist.css" />
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+    
+  <header class="top-nav">
+    <div class="logo">
+      <span class="logo-icon"><i class="fa-solid fa-tower-cell"></i></span>
+      <span class="logo-text">CastleTunes</span>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html">Welcome</a>
+      <a href="home.html">Home</a>
+      <a href="playlist.html" class="active">Playlist</a>
+      <a href="search.html">Search</a>
+      <a href="premium.html">Premium</a>
+      <a href="about.html">About</a>
+      <a href="profile.html">Profile</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <section class="playlist-header">
+      <div class="cover"></div>
+      <div>
+        <p class="type">Playlist</p>
+        <h1>Castle Sunrise</h1>
+        <p class="meta">Soft electronic • 10 songs • 32 min</p>
+      </div>
+    </section>
+
+    <section class="controls-row">
+      <button id="mainPlay" class="btn-play">
+        <i class="fa-solid fa-play"></i>
+      </button>
+      <button class="btn-heart"><i class="fa-regular fa-heart"></i></button>
+    </section>
+
+    <section class="tracks">
+      <div class="tracks-head">
+        <span>#</span><span>Title</span><span>Artist</span><span>Time</span>
+      </div>
+      <div id="trackList" class="tracks-body">
+        <!-- 10 demo tracks -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="player-bar">
+    <div class="now-playing">
+      <div class="thumb"></div>
+      <div>
+        <p id="npTitle">Select a song</p>
+        <span id="npArtist">Playlist not started</span>
+      </div>
+    </div>
+    <div class="player-center">
+      <div class="buttons">
+        <i id="prevBtn" class="fa-solid fa-backward-step"></i>
+        <button id="playBtn" class="circle">
+          <i class="fa-solid fa-play"></i>
+        </button>
+        <i id="nextBtn" class="fa-solid fa-forward-step"></i>
+      </div>
+      <div class="timeline">
+        <span id="currentTime">0:00</span>
+        <div id="progressArea" class="progress">
+          <div id="progressFill" class="fill"></div>
+        </div>
+        <span id="duration">0:00</span>
+      </div>
+    </div>
+    <div class="player-right">
+      <i class="fa-solid fa-volume-high"></i>
+      <input id="volume" type="range" min="0" max="1" step="0.01" value="0.7" />
+    </div>
+  </footer>
+
+  <audio id="audio"></audio>
+  <script src="playlist.js"></script>
+</body>
+</html>
